@@ -28,3 +28,38 @@ fetch(
 	.catch((error) => {
 		console.error(error);
 	});
+
+    const destinationHTML = document.getElementById("desctination");
+    const departureHTML = document.getElementById("departure");
+
+    fetch(
+        'https://raw.githubusercontent.com/mmarkowski94/look-up/main/src/endpointy/db.json'
+    )
+        .then((response) => response.json())
+        .then((data) => {
+            data.destination.forEach(destinationElem => {
+                const elem = document.createElement('option');
+                elem.textContent = destinationElem.desc;
+                elem.setAttribute('value', destinationElem.value);
+                destinationHTML.appendChild(elem);
+            });
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+        fetch(
+            'https://raw.githubusercontent.com/mmarkowski94/look-up/main/src/endpointy/db.json'
+        )
+            .then((response) => response.json())
+            .then((data) => {
+                data.departure.forEach(departureElem => {
+                    const elem = document.createElement('option');
+                    elem.textContent = departureElem.desc;
+                    elem.setAttribute('value', departureElem.value);
+                    departureHTML.appendChild(elem);
+                });
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    // <option value="volvo">Volvo</option>

@@ -18,5 +18,26 @@
             "desc": "Portugalia",
             "code":"prl"
 		}
+	],
+    "departure": [
+		{
+			"id": 0,
+			"value": "france",
+            "desc": "Francja",
+            "code":"frn"
+		},
+		{
+			"id": 1,
+			"value": "spain",
+            "desc": "Hiszpania",
+            "code":"spn"
+		},
+		{
+			"id": 2,
+			"value": "portugal",
+            "desc": "Portugalia",
+            "code":"prl"
+		}
 	]
 }
+	

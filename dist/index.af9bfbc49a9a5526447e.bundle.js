@@ -172,15 +172,41 @@ var myIcon = new Image();
 myIcon.src = _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__;
 document.querySelector('div').append(myIcon);
 document.querySelector('div').classList.add('change');
-fetch('https://raw.githubusercontent.com/mmarkowski94/look-up/main/src/endpointy/db.json?token=GHSAT0AAAAAAB7SHF6RIFC4OJB35E4YKZQ6ZAEL3EA').then(function (response) {
+fetch('https://raw.githubusercontent.com/mmarkowski94/look-up/main/src/endpointy/db.json').then(function (response) {
   return response.json();
 }).then(function (data) {
   console.log(data);
 })["catch"](function (error) {
   console.error(error);
 });
+var destinationHTML = document.getElementById("desctination");
+var departureHTML = document.getElementById("departure");
+fetch('https://raw.githubusercontent.com/mmarkowski94/look-up/main/src/endpointy/db.json').then(function (response) {
+  return response.json();
+}).then(function (data) {
+  data.destination.forEach(function (destinationElem) {
+    var elem = document.createElement('option');
+    elem.textContent = destinationElem.desc;
+    elem.setAttribute('value', destinationElem.value);
+    destinationHTML.appendChild(elem);
+  });
+})["catch"](function (error) {
+  console.error(error);
+});
+fetch('https://raw.githubusercontent.com/mmarkowski94/look-up/main/src/endpointy/db.json').then(function (response) {
+  return response.json();
+}).then(function (data) {
+  data.departure.forEach(function (departureElem) {
+    var elem = document.createElement('option');
+    elem.textContent = departureElem.desc;
+    elem.setAttribute('value', departureElem.value);
+    departureHTML.appendChild(elem);
+  });
+})["catch"](function (error) {
+  console.error(error);
+}); // <option value="volvo">Volvo</option>
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index.97f511f14a39e17b3af5.bundle.js.map
+//# sourceMappingURL=index.af9bfbc49a9a5526447e.bundle.js.map
