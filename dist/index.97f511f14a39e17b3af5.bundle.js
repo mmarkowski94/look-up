@@ -172,16 +172,15 @@ var myIcon = new Image();
 myIcon.src = _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__;
 document.querySelector('div').append(myIcon);
 document.querySelector('div').classList.add('change');
-fetch('./endpointy/lokalizacje.json').then(function (response) {
+fetch('https://raw.githubusercontent.com/mmarkowski94/look-up/main/src/endpointy/db.json?token=GHSAT0AAAAAAB7SHF6RIFC4OJB35E4YKZQ6ZAEL3EA').then(function (response) {
   return response.json();
 }).then(function (data) {
   console.log(data);
 })["catch"](function (error) {
   console.error(error);
 });
-console.log(destination);
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index.c6a2807ddc00d7356fb1.bundle.js.map
+//# sourceMappingURL=index.97f511f14a39e17b3af5.bundle.js.map

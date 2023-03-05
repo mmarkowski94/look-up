@@ -18,14 +18,13 @@ myIcon.src = Icon;
 document.querySelector('div').append(myIcon);
 document.querySelector('div').classList.add('change');
 
-fetch('./endpointy/lokalizacje.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.error(error);
-  });
-
-
-console.log(destination);
+fetch(
+	'https://raw.githubusercontent.com/mmarkowski94/look-up/main/src/endpointy/db.json'
+)
+	.then((response) => response.json())
+	.then((data) => {
+		console.log(data);
+	})
+	.catch((error) => {
+		console.error(error);
+	});

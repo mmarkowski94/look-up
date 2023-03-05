@@ -2,15 +2,21 @@
 	"destination": [
 		{
 			"id": 0,
-			"name": "Francja"
+			"value": "france",
+            "desc": "Francja",
+            "code":"frn"
 		},
 		{
 			"id": 1,
-			"name": "Hiszpania"
+			"value": "spain",
+            "desc": "Hiszpania",
+            "code":"spn"
 		},
 		{
 			"id": 2,
-			"name": "Portugalia"
+			"value": "portugal",
+            "desc": "Portugalia",
+            "code":"prl"
 		}
 	]
 }
