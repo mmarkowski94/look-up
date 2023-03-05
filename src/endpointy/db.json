@@ -1,0 +1,16 @@
+{
+	"destination": [
+		{
+			"id": 0,
+			"name": "Francja"
+		},
+		{
+			"id": 1,
+			"name": "Hiszpania"
+		},
+		{
+			"id": 2,
+			"name": "Portugalia"
+		}
+	]
+}
