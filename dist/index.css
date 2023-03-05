@@ -12,5 +12,8 @@ body {
   -ms-user-select: none;
   user-select: none; }
 
+.hidden {
+  display: none; }
+
 
 /*# sourceMappingURL=index.css.map*/

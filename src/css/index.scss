@@ -1,11 +1,8 @@
-body {
-    background-color: red;
-
-    h1{
-        color: blue;
-    }
-}
 
 .autoprefixer {
     user-select: none;
+}
+
+.hidden {
+    display:none;
 }
